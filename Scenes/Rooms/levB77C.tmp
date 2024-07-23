@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://yuqmicnn16m8"]
+
+[ext_resource type="PackedScene" uid="uid://dkxs66cvi7ywv" path="res://Scenes/Prefabs/player.tscn" id="1_ah1pj"]
+[ext_resource type="TileSet" uid="uid://b8yjsv6l2qmxv" path="res://Assets/Level 1/level1_terrain.tres" id="2_ec73s"]
+
+[node name="level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_ah1pj")]
+position = Vector2(481, 318)
+speed = 400
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_ec73s")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 0, 131072, 0, 0, 196608, 0, 0, 262144, 0, 0, 327680, 0, 0, 393216, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 4, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0, 8, 0, 0, 9, 0, 0, 10, 0, 0, 11, 0, 0, 12, 0, 0, 13, 0, 0, 14, 0, 0, 15, 0, 0, 16, 0, 0, 17, 0, 0, 18, 0, 0, 19, 0, 0, 20, 0, 0, 21, 0, 0, 22, 0, 0, 23, 0, 0, 24, 0, 0, 25, 0, 0, 26, 0, 0)
