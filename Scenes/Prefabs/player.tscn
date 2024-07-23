@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dkxs66cvi7ywv"]
+
+[ext_resource type="Script" path="res://Assets/player/player.gd" id="1_wabtp"]
+[ext_resource type="SpriteFrames" uid="uid://bjsu7r2p8d84w" path="res://Assets/player/player_sprite.tres" id="1_xn6nh"]
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(976, 344)
+script = ExtResource("1_wabtp")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_xn6nh")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.908208
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
