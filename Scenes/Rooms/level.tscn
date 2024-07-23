@@ -1,8 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://yuqmicnn16m8"]
+[gd_scene load_steps=3 format=3 uid="uid://yuqmicnn16m8"]
 
 [ext_resource type="PackedScene" uid="uid://dkxs66cvi7ywv" path="res://Scenes/Prefabs/player.tscn" id="1_ah1pj"]
+[ext_resource type="TileSet" uid="uid://b8yjsv6l2qmxv" path="res://Assets/Level 1/level1_terrain.tres" id="2_ec73s"]
 
 [node name="level" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_ah1pj")]
-position = Vector2(655, 416)
+position = Vector2(632, 334)
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_ec73s")
+format = 2
