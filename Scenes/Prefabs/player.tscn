@@ -4,7 +4,7 @@
 [ext_resource type="SpriteFrames" uid="uid://bjsu7r2p8d84w" path="res://Assets/player/player_sprite.tres" id="1_xn6nh"]
 
 [node name="Player" type="CharacterBody2D"]
-position = Vector2(976, 344)
+position = Vector2(601, 262)
 script = ExtResource("1_wabtp")
 metadata/_edit_group_ = true
 
